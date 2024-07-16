@@ -76,7 +76,6 @@ public final class BAirDropX extends JavaPlugin {
     private static BAirDropX instance;
     private Message message;
     private ObserverManager observerManager;
-    private static boolean debug = true;
     private TimerManager timerManager;
     private Command<CommandSender> command;
     private final Map<NameKey, AirDrop> airDropMap = new HashMap<>();
@@ -467,7 +466,7 @@ public final class BAirDropX extends JavaPlugin {
     }
 
     public static void debug(Supplier<String> message) {
-        if (debug) {
+        if (BAirDropX.getInstance().getConfig().getBoolean("debug", true)) {
             getMessage().debug(message.get());
         }
     }
