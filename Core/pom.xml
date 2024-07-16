@@ -111,8 +111,8 @@
             <url>https://jitpack.io</url>
         </repository>
         <repository>
-            <id>by1337</id>
-            <url>https://by1337.space/repository/maven-releases/</url>
+            <id>by1337-repo</id>
+            <url>https://repo.by1337.space/repository/maven-releases/</url>
         </repository>
         <repository>
             <id>placeholderapi</id>
@@ -123,8 +123,8 @@
     <dependencies>
         <dependency>
             <groupId>org.by1337.blib</groupId>
-            <artifactId>Blib</artifactId>
-            <version>1.0.8.1</version>
+            <artifactId>Blib-api</artifactId>
+            <version>1.1.1</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
